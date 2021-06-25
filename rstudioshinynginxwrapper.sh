@@ -21,7 +21,7 @@ rm rstudio-server-latest-amd64.deb
 sudo apt-get install nginx -y
 
 # Configure nginx with RStudio-Server and Shiny-Server virtualhosts
-sudo cp https://raw.githubusercontent.com/jtsmith275/RStudioNginxShiny/master/default -O /etc/nginx/sites-enabled/default
+sudo cp https://raw.githubusercontent.com/Jtsmith275/RStudioNginxShiny/master/default -O /etc/nginx/sites-enabled/default
 
 # Install Ubuntu packages
 sudo apt-get update && sudo apt-get install -y \
@@ -93,7 +93,7 @@ sudo gdebi -n ss-latest.deb
 rm -f version.txt ss-latest.deb
 
 # Configure Shiny-Server
-sudo cp https://raw.githubusercontent.com/jtsmith275/RStudioNginxShiny/master/shiny-server.conf -O /etc/nginx/sites-enabled/shiny-server.conf
+sudo cp https://raw.githubusercontent.com/Jtsmith275/RStudioNginxShiny/master/shiny-server.conf -O /etc/nginx/sites-enabled/shiny-server.conf
 sudo sed -i "s/run_as shiny/run_as $USER/" /etc/shiny-server/shiny-server.conf
 sudo sed -i "s/site_dir \/srv\/shiny-server/site_dir \/home\/$USER\/shiny/" /etc/shiny-server/shiny-server.conf
 mkdir $HOME/shiny
