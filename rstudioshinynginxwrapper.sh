@@ -23,8 +23,10 @@ sudo apt-get install nginx -y
 # Configure nginx with RStudio-Server and Shiny-Server virtualhosts
 sudo wget https://raw.githubusercontent.com/Jtsmith275/RStudioNginxShiny/master/default -O /etc/nginx/sites-enabled/default
 
+sudo apt-get update -y
+
 # Install Ubuntu packages
-sudo apt-get update && sudo apt-get install -y \
+sudo apt-get install \
     gdebi-core \
     pandoc \
     pandoc-citeproc \
@@ -32,10 +34,9 @@ sudo apt-get update && sudo apt-get install -y \
     libcairo2-dev \
     libxt-dev \
     libssl-dev \
-    libxml2-dev 	
+    libxml2-dev -y	
     
-sudo apt-get update \
-  && sudo apt-get install -y \
+sudo apt-get install \
     lbzip2 \
     libfftw3-dev \
     libgdal-dev \
@@ -64,7 +65,7 @@ sudo apt-get update \
     libmariadbd-dev \
     libmariadbclient-dev \
     libcurl4-openssl-dev \
-    libssh2-1-dev 
+    libssh2-1-dev -y
 
 # add addition system dependencies but suffixing \ <package name> on the end of the apt-get update & apt-get install -y command
 
