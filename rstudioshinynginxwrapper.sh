@@ -69,8 +69,8 @@ sudo apt-get install \
 # add addition system dependencies but suffixing \ <package name> on the end of the apt-get update & apt-get install -y command
 
 # Install Shiny R package
-mkdir -p ~/R/x86_64-pc-linux-gnu-library/4.0
-R -e "install.packages('shiny', repos='https://cran.rstudio.com/', lib='~/R/x86_64-pc-linux-gnu-library/4.0')"
+mkdir -p ~/R/x86_64-pc-linux-gnu-library/4.1
+R -e "install.packages('shiny', repos='https://cran.rstudio.com/', lib='~/R/x86_64-pc-linux-gnu-library/4.1')"
 
 #Install other common R packages
 R -e "install.packages(c('directlabels','shinydashboard','ggplot2','plotly','scales','forcats','stringr','DT','readxl','tidyr','zoo','lubridate','reshape2','lemon','RColorBrewer','networkD3','shinyWidgets','shinyjs','shinycssloaders','openxlsx','readr','gcookbook','ggrepel','readODS','doBy','rtweet','httpuv','purrr','tm','wordcloud','jsonlite','lda','LDAvis','udpipe','lattice','tidytext','knitr','rmarkdown','readxl','htmltools','bs4Dash'),repos='https://cran.rstudio.com/', lib='~/R/x86_64-pc-linux-gnu-library/4.0')"
