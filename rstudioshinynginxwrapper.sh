@@ -47,7 +47,6 @@ sudo apt-get install \
     libhdf4-alt-dev \
     libhdf5-dev \
     libjq-dev \
-    liblwgeom-dev \
     libpq-dev \
     libproj-dev \
     libprotobuf-dev \
@@ -62,8 +61,8 @@ sudo apt-get install \
     unixodbc-dev \
     libv8-dev \
     libnode-dev \
-    libmariadbd-dev \
-    libmariadbclient-dev \
+    default-libmysqlclient-dev \
+    libmysqlclient-dev \
     libcurl4-openssl-dev \
     libssh2-1-dev -y
 
