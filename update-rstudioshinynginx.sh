@@ -6,7 +6,7 @@ sudo apt-get update && sudo apt-get install r-base r-base-dev -y
 
 # Install latest verion of RStudio Server
 sudo apt-get install gdebi-core -y
-wget https://download2.rstudio.org/server/jammy/amd64/rstudio-server-2022.07.2-576-amd64.deb
+wget https://download2.rstudio.org/server/bionic/amd64/rstudio-server-2022.07.2-576-amd64.deb
 sudo gdebi --non-interactive rstudio-server-2022.07.2-576-amd64.deb
 rm  rstudio-server-2022.07.2-576-amd64.deb
 
