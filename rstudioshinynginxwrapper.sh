@@ -13,9 +13,9 @@ sudo apt-get update && sudo apt-get install r-base r-base-dev -y
 
 # Install RStudio-Server
 sudo apt-get install gdebi-core -y
-wget https://download2.rstudio.org/server/bionic/amd64/rstudio-server-2022.07.1-554-amd64.deb
-sudo gdebi --non-interactive rstudio-server-2022.07.2-576-amd64.deb
-rm  rstudio-server-2022.07.2-576-amd64.deb
+wget https://download2.rstudio.org/server/focal/amd64/rstudio-server-2023.06.2-561-amd64.deb
+sudo gdebi --non-interactive wget rstudio-server-2023.06.2-561-amd64.deb
+rstudio-server-2023.06.2-561-amd64.deb
 
 # Install nginx
 sudo apt-get install nginx -y
@@ -70,7 +70,7 @@ sudo apt-get install \
 
 # Install Shiny R package
 mkdir -p ~/R/x86_64-pc-linux-gnu-library/4.2
-R -e "install.packages('shiny', repos='https://cran.rstudio.com/', lib='~/R/x86_64-pc-linux-gnu-library/4.2')"
+R -e "install.packages('shiny', repos='https://cran.rstudio.com/', lib='~/R/x86_64-pc-linux-gnu-library/4.3')"
 
 #Install other common R packages
 R -e "install.packages(c('directlabels','shinydashboard','ggplot2','plotly','scales','forcats','stringr','DT','readxl','tidyr','zoo','lubridate','reshape2','lemon','RColorBrewer','networkD3','shinyWidgets','shinyjs','shinycssloaders','openxlsx','readr','gcookbook','ggrepel','readODS','doBy','rtweet','httpuv','purrr','tm','wordcloud','jsonlite','lda','LDAvis','udpipe','lattice','tidytext','knitr','rmarkdown','readxl','htmltools','bs4Dash'),repos='https://cran.rstudio.com/', lib='~/R/x86_64-pc-linux-gnu-library/4.0')"
