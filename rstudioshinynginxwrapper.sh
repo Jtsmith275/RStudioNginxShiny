@@ -14,7 +14,7 @@ sudo apt-get update && sudo apt-get install r-base r-base-dev -y
 # Install RStudio-Server
 sudo apt-get install gdebi-core -y
 wget https://download2.rstudio.org/server/focal/amd64/rstudio-server-2023.06.2-561-amd64.deb
-sudo gdebi --non-interactive wget rstudio-server-2023.06.2-561-amd64.deb
+sudo gdebi --non-interactive rstudio-server-2023.06.2-561-amd64.deb
 rstudio-server-2023.06.2-561-amd64.deb
 
 # Install nginx
@@ -73,17 +73,17 @@ mkdir -p ~/R/x86_64-pc-linux-gnu-library/4.3
 R -e "install.packages('shiny', repos='https://cran.rstudio.com/', lib='~/R/x86_64-pc-linux-gnu-library/4.3')"
 
 #Install other common R packages
-R -e "install.packages(c('directlabels','shinydashboard','ggplot2','plotly','scales','forcats','stringr','DT','readxl','tidyr','zoo','lubridate','reshape2','lemon','RColorBrewer','networkD3','shinyWidgets','shinyjs','shinycssloaders','openxlsx','readr','gcookbook','ggrepel','readODS','doBy','rtweet','httpuv','purrr','tm','wordcloud','jsonlite','lda','LDAvis','udpipe','lattice','tidytext','knitr','rmarkdown','readxl','htmltools','bs4Dash'),repos='https://cran.rstudio.com/', lib='~/R/x86_64-pc-linux-gnu-library/4.0')"
+R -e "install.packages(c('directlabels','shinydashboard','ggplot2','plotly','scales','forcats','stringr','DT','readxl','tidyr','zoo','lubridate','reshape2','lemon','RColorBrewer','networkD3','shinyWidgets','shinyjs','shinycssloaders','openxlsx','readr','gcookbook','ggrepel','readODS','doBy','rtweet','httpuv','purrr','tm','wordcloud','jsonlite','lda','LDAvis','udpipe','lattice','tidytext','knitr','rmarkdown','readxl','htmltools','bs4Dash'),repos='https://cran.rstudio.com/', lib='~/R/x86_64-pc-linux-gnu-library/4.3')"
      
-R -e "install.packages(c('tidyverse','dplyr','devtools','formatR','remotes','selectr','caTools','BiocManager',repos='https://cran.rstudio.com/', lib='~/R/x86_64-pc-linux-gnu-library/4.0'))"
+R -e "install.packages(c('tidyverse','dplyr','devtools','formatR','remotes','selectr','caTools','BiocManager',repos='https://cran.rstudio.com/', lib='~/R/x86_64-pc-linux-gnu-library/4.3'))"
  
-R -e "install.packages(c('RColorBrewer','RandomFields','RNetCDF','classInt','deldir','gstat','hdf5r','lidR','mapdata','maptools','mapview','ncdf4','proj4','raster','rgdal','rgeos','rlas','sf','sp','spacetime','spatstat','spdep','geoR','geosphere'), repos='http://r-forge.r-project.org/', lib='~/R/x86_64-pc-linux-gnu-library/4.0')"
+R -e "install.packages(c('RColorBrewer','RandomFields','RNetCDF','classInt','deldir','gstat','hdf5r','lidR','mapdata','maptools','mapview','ncdf4','proj4','raster','rgdal','rgeos','rlas','sf','sp','spacetime','spatstat','spdep','geoR','geosphere'), repos='http://r-forge.r-project.org/', lib='~/R/x86_64-pc-linux-gnu-library/4.3')"
 
-R -e "install.packages(c('forcats','shinycssloaders','odbc','fs','rlang','tibble','survey','stringr','survey','mosaic','DBI','fs','lubridate','magrittr','yaml','knitr','rmarkdown','testthat'), lib='~/R/x86_64-pc-linux-gnu-library/4.0')"
+R -e "install.packages(c('forcats','shinycssloaders','odbc','fs','rlang','tibble','survey','stringr','survey','mosaic','DBI','fs','lubridate','magrittr','yaml','knitr','rmarkdown','testthat'), lib='~/R/x86_64-pc-linux-gnu-library/4.3')"
 
-R -e "install.packages(c('chron','countrycode','geojsonio','shinythemes','shinyTime','colourpicker','leaflet.minicharts','janitor','polite','rworldmap','shinyAce','treemap'), lib='~/R/x86_64-pc-linux-gnu-library/4.0')"
+R -e "install.packages(c('chron','countrycode','geojsonio','shinythemes','shinyTime','colourpicker','leaflet.minicharts','janitor','polite','rworldmap','shinyAce','treemap'), lib='~/R/x86_64-pc-linux-gnu-library/4.3')"
 
-R -e "install.packages(c('directlabels'), repos='http://r-forge.r-project.org/', lib='~/R/x86_64-pc-linux-gnu-library/4.0')" && rm -rf /tmp/downloaded_packages
+R -e "install.packages(c('directlabels'), repos='http://r-forge.r-project.org/', lib='~/R/x86_64-pc-linux-gnu-library/4.3')" && rm -rf /tmp/downloaded_packages
 
 # Install Shiny-Server
 wget --no-verbose https://download3.rstudio.org/ubuntu-18.04/x86_64/VERSION -O "version.txt"
