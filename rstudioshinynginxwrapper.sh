@@ -64,7 +64,9 @@ sudo apt-get install \
     default-libmysqlclient-dev \
     libmysqlclient-dev \
     libcurl4-openssl-dev \
-    libssh2-1-dev -y
+    libssh2-1-dev \
+    libharfbuzz-dev \
+    libfribidi-dev -y
 
 # add addition system dependencies but suffixing \ <package name> on the end of the apt-get update & apt-get install -y command
 
